@@ -113,7 +113,7 @@ h1 {
 
 body.dark {
   background-color: #121212;
-  color: #eee;
+  color: #ffffff;
 }
 
 body.dark .container {
@@ -126,6 +126,10 @@ body.dark a {
 
 body.dark .project-card {
   background: #2a2a2a;
+}
+
+.dark{
+  background-color: red;
 }
 
 .nav {
@@ -208,6 +212,5 @@ html {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-
 
 
