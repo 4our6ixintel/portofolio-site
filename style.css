@@ -6,7 +6,9 @@ body {
   text-align: center;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 .container {
   max-width: 600px;
