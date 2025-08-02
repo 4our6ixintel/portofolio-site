@@ -4,13 +4,38 @@
   <meta charset="UTF-8">
   <title>Terms and Conditions</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
+<div class="navex">
+     <nav class="nav">
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    <div class="logo">hytsbae</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+
+      <nav>
+    <a href="index.html">Home</a> |
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms and Conditions</a>
+  </nav>
+
+</div>
 <main>
     <body>
   <h1>Terms and Conditions</h1>
   <p>By using this website, you agree to the following terms and conditions.</p>
   <p>This website is for personal and portfolio purposes only. No warranties are provided.</p>
 </body>
+
+   <script>
+          function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+    </script>
 </main>
 </html>

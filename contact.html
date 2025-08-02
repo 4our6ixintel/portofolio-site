@@ -4,13 +4,33 @@
   <meta charset="UTF-8">
   <title>Contact</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+   <nav class="nav">
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    <div class="logo">hytsbae</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+
+      <nav>
+    <a href="index.html">Home</a> |
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms and Conditions</a>
+  </nav>
     <main>
           <h1>Contact</h1>
   <p>You can reach me via email:hytsbae120@gmail.com</p>
     </main>
-
+   <script>
+          function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+    </script>
 </body>
 </html>
