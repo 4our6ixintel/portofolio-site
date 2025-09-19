@@ -1,0 +1,28 @@
+function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+}
+
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+const scrollers = document.querySelectorAll(".scroller");
+
+if (!window.matchMedia("prefers-reduced-motion: reduce)").matches) {
+    addAnimation();
+}
+
+function addAnimation() {
+    scrolllers.forEach((scroller) => {
+        scroller.setAttribute("data-animated", true);
+
+        const scrollerInner = scroller.querySelector(".scroller_inner");
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        scrollerContent.forEach(item => {
+            const duplicatedItem = item.cloneNode(true);
+            duplicatedItem.setAttribute("aria-hidden", true);
+            scrollerInner.appendChild(duplicatedItem);
+        })
+    });
+}
